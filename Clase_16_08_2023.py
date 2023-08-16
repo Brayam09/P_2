@@ -1,7 +1,7 @@
 #LISTAS
+"""
 
-
-varlista = ['Hector',True,5.5,9]
+varlista = ['Hector',True,5.5,9]"""
 """
 print(varlista[0])
 print(varlista[1])
@@ -81,5 +81,11 @@ for z in varlista:
     print(z)
 """
 
+datos = [('Hector', 'Sanchez', 36), ('Maria', 'Lugo', 28),('Juan', 'Silva', 17)]
 
+for z in datos:
+    for u in z:
+        print(u)
+    print('----------')
 
+"""1. Diccionario"""

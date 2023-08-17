@@ -3,6 +3,8 @@
 #Luego, imprima en la consola si la contraseña que el usuario ingreso coincide con 
 # la guardada en variable.
 
+
+print()
 print('Comparador de contraseñas')
 print()
 print('Ingrese una contaseña y compruebe si es correcta')
@@ -66,7 +68,8 @@ else :
 #4. Escriba que mediante un vector  de 5 item, lea cada item y evalué el ingreso a menores de 
 # edad, si la persona tiene menos de 19 años el programa le debe mostrar 
 #en pantalla que ¡No puede ingresar!, de caso contrario que le diga ¡Bienvenido!
-print('Acseso')
+print()
+print('Accceso')
 print()
 edades = [21,23,18,17,20]
 

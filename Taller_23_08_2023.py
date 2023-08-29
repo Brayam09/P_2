@@ -1,4 +1,4 @@
-#1. Escriba un programa que almacene (Input) en una 
+""""#1. Escriba un programa que almacene (Input) en una 
 #Lista las materias que has cursado con sus respectivas notas
 # Luego muestre la lista por consola mediante un ciclo.
 
@@ -80,25 +80,27 @@ d = float(input("Ingrese el valor en pesos a convertir: "))
 
 s = input("Seleccione una divisa")
 
-Euro = float(4500),
-Dolar = float(3500),
-Yen = float(3000)
+Euro = str(d *4.5)
+Dolar = str(d*3.5)
+Yen = str(d*3)
+
+
 
 if s == "Euro":
-    print("El valor en Euros es: ",d*Euro,"€")
+    print("El valor en Euros es: ",Euro,"€")
     print()
 
 elif s == "Dolar":
-    print("El valor en Dolar es: ",d*Euro,"$")
+    print("El valor en Dolar es: ",Dolar,"$")
     print()
 
 elif s == "Yen":
-    print("El valor en Yenes es: ",d*Euro,"¥")
+    print("El valor en Yenes es: ",Yen,"¥")
     print()
 
 else :
     print("No se encuentra la divisa")
-
+"""
 
 #4. En una tupla coloque o ingrese (input) los siguientes valores: números enteros, 
 #decimales, String, colecciones. Luego muestre en consola que tipo de datos o variable 
@@ -107,15 +109,66 @@ else :
 tupla = ()
 
 t = list(tupla)
-x = input("Ingrese los elementos de la tupla")
-t.append(x)
-tupla = tuple(t)
+print("Tipo de dato")
+print("STR, FLOAT , INT")
+print()
+d = input("Seleccione el tipo de dato: ")
+print()
 
+if d == "STR":
+    x = input("Ingrese los elementos de la tupla: ")
+    t.append(x)
+    tupla = tuple(t)
+    
 
-for x in tupla:
-    z = type(x)
-    print(z)
+if d == "FLOAT":
+    f = input("Ingrese los elementos de la tupla: ")
+    t.append(f)
+    tupla = tuple(t)
 
+if d == "INT":
+    f = input("Ingrese los elementos de la tupla: ")
+    t.append(f)
+    tupla = tuple(t)
 
+else:
+    print("No selecciono ningun tipo")
+    print()
+    d = input("Seleccione el tipo de dato: ")
+    
 
+z = input("Desea agregar mas elementos?, escriba 'si' para agrgar uno mas")
 
+while z == "si" :
+
+    t = list(tupla)
+    print("Tipo de dato")
+    print("STR, FLOAT , INT")
+    print()
+    d = input("Seleccione el tipo de dato: ")
+    print()
+
+    if d == "STR":
+        x = input("Ingrese los elementos de la tupla: ")
+        t.append(x)
+        tupla = tuple(t)
+        
+
+    elif d == "FLOAT":
+        f = input("Ingrese los elementos de la tupla: ")
+        t.append(f)
+        tupla = tuple(t)
+
+    elif d == "INT":
+        f = input("Ingrese los elementos de la tupla: ")
+        t.append(f)
+        tupla = tuple(t)
+
+    else:
+        print("No selecciono ninguna materia")
+       
+
+    z = input("Desea agregar mas elementos?, escriba 'si' para agrgar uno mas")
+else:
+    for a in tupla:
+        print(f"El valor {a} es de tipo {type(a).__name__}")
